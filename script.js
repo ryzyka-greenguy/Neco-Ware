@@ -49,7 +49,7 @@ function createStars() {
 }
 
 function openWebsite() {
-    window.open('https://discord.com/channels/@me/1120969252334207108/1271499874881241151', '_blank'); // Replace with your desired URL
+    window.open('https://cdn.discordapp.com/attachments/1120969252334207108/1271499874424193044/message.txt?ex=66b79009&is=66b63e89&hm=9f44542c105688ff612c132398784f3ce89a08d567297e20156d782dcfa8f625&', '_blank'); // Replace with your desired URL
 }
 
 createStars();

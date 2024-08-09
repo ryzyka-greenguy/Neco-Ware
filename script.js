@@ -49,7 +49,7 @@ function createStars() {
 }
 
 function openWebsite() {
-    window.open('https://example.com', '_blank'); // Replace with your desired URL
+    window.open('https://discord.com/channels/@me/1120969252334207108/1271499874881241151', '_blank'); // Replace with your desired URL
 }
 
 createStars();

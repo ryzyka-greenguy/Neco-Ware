@@ -36,6 +36,7 @@ h1 {
     text-shadow: 0 0 20px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.6), 0 0 40px rgba(0, 255, 0, 0.4);
     animation: glow 2s infinite alternate, pulse 5s infinite;
     display: inline; /* Aligns text horizontally */
+	color: black;
 }
 
 @keyframes glow {
@@ -50,7 +51,7 @@ h1 {
 
 .version {
     font-size: 33px; /* 14 pixels smaller if base font size is 16 pixels */
-    color: #E6E6E6;
+    color: bl;
     text-shadow: 0 0 15px rgba(0, 255, 0, 0.8), 0 0 25px rgba(0, 255, 0, 0.6), 0 0 35px rgba(0, 255, 0, 0.4);
     display: inline; /* Aligns text horizontally */
     margin-left: -3px; /* Spacing between texts */

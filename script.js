@@ -49,7 +49,7 @@ function createStars() {
 }
 
 function openWebsite() {
-    window.open('https://download1474.mediafire.com/idxitik2ws9gvee_eQmK_jEhCQ9IkxdE3QZuW16zSlnajMX3XiyvVjECU3nGTiQuoyyyXo_Qzaqq71GSYyPcHhef66Tsc34n3LReOnmqpUc9J-cDknYbILHCEfMUPcWHWP13Zq8HliYJtnLpq0Hk5KBpfIHtchHZH4bnGdiBgw6L/0m15j9dlm3cc9cf/Neco-Ware+V2.zip', '_blank'); // Replace with your desired URL
+    window.open('https://download1474.mediafire.com/idxitik2ws9gvee_eQmK_jEhCQ9IkxdE3QZuW16zSlnajMX3XiyvVjECU3nGTiQuoyyyXo_Qzaqq71GSYyPcHhef66Tsc34n3LReOnmqpUc9J-cDknYJtnLpq0Hk5KBpfIHtchNeWare+V2.zip', '_blank'); // Replace with your desired URL
 }
 
 createStars();

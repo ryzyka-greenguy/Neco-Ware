@@ -49,7 +49,7 @@ function createStars() {
 }
 
 function openWebsite() {
-    window.open('https://download938.mediafire.com/tq8pn6g78afg3PeDem0EoLGnKAU7fiUp_KwHrpSClWKO5fMzI7uPPYBCcZARe53WZKNftJnW1EYcg-qmyRE2Y9I4EaIAHVCoAfAsTvr2mvxMyWAzsHn5iLxAr5MhGS9UbmlHBKYX43nBEdTj-u6CXqJ3BvCKAuH6ggVjp2jzlNg0/y2g08ipxwy6bctl/Neco-Ware+V2.zip', '_blank'); // Replace with your desired URL
+    window.open('https://nohello.net', '_blank'); // Replace with your desired URL
 }
 
 createStars();

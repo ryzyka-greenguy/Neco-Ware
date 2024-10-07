@@ -1,1 +1,1210 @@
-sigma rizzler
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 64 | Scripts: 14 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.Neco-Ware
+G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
+G2L["1"]["Name"] = [[Neco-Ware]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.Neco-Ware.Main
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(33, 33, 33);
+G2L["2"]["Size"] = UDim2.new(0, 457, 0, 260);
+G2L["2"]["Position"] = UDim2.new(0, 203, 0, 182);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[Main]];
+
+
+-- StarterGui.Neco-Ware.Main.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Neco-Ware.Main.Panel
+G2L["4"] = Instance.new("Frame", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Size"] = UDim2.new(0, 457, 0, 29);
+G2L["4"]["Position"] = UDim2.new(0, 0, 0, -1);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Name"] = [[Panel]];
+
+
+-- StarterGui.Neco-Ware.Main.Panel.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+G2L["5"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Neco-Ware.Main.Panel.MenuButton
+G2L["6"] = Instance.new("ImageButton", G2L["4"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["6"]["Image"] = [[rbxassetid://123381490688226]];
+G2L["6"]["Size"] = UDim2.new(0, 32, 0, 32);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Name"] = [[MenuButton]];
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Position"] = UDim2.new(0, 16, 0, 15);
+
+
+-- StarterGui.Neco-Ware.Main.Panel.MenuButton.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.Neco-Ware.Main.Panel.MenuButton.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.Neco-Ware.Main.Panel.TextLabel
+G2L["9"] = Instance.new("TextLabel", G2L["4"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["9"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["TextSize"] = 20;
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["BackgroundTransparency"] = 1;
+G2L["9"]["RichText"] = true;
+G2L["9"]["Size"] = UDim2.new(0, 70, 0, 19);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[Neco-Ware]];
+G2L["9"]["Position"] = UDim2.new(0, 32, 0, -2);
+
+
+-- StarterGui.Neco-Ware.Main.Panel.TextLabel
+G2L["a"] = Instance.new("TextLabel", G2L["4"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["a"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["TextSize"] = 15;
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a"]["TextDirection"] = Enum.TextDirection.LeftToRight;
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Size"] = UDim2.new(0, 109, 0, 19);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[Internal UI]];
+G2L["a"]["Position"] = UDim2.new(0, 32, 0, 11);
+
+
+-- StarterGui.Neco-Ware.Main.Panel.UIStroke
+G2L["b"] = Instance.new("UIStroke", G2L["4"]);
+G2L["b"]["Thickness"] = 2;
+G2L["b"]["Color"] = Color3.fromRGB(0, 96, 0);
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab
+G2L["c"] = Instance.new("Frame", G2L["2"]);
+G2L["c"]["Visible"] = false;
+G2L["c"]["ZIndex"] = 0;
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["Size"] = UDim2.new(0, 457, 0, 232);
+G2L["c"]["Position"] = UDim2.new(0, 0, 0.10769, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Name"] = [[SettingsTab]];
+G2L["c"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.FPS
+G2L["d"] = Instance.new("TextBox", G2L["c"]);
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["Name"] = [[FPS]];
+G2L["d"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["RichText"] = true;
+G2L["d"]["MultiLine"] = true;
+G2L["d"]["ClearTextOnFocus"] = false;
+G2L["d"]["PlaceholderText"] = [[Number here]];
+G2L["d"]["Size"] = UDim2.new(0, 62, 0, 46);
+G2L["d"]["Position"] = UDim2.new(0.84902, 0, 0.03879, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[]];
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.FPS.UICorner
+G2L["e"] = Instance.new("UICorner", G2L["d"]);
+G2L["e"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["c"]);
+
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.FPSUnlocker
+G2L["10"] = Instance.new("TextButton", G2L["c"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["Size"] = UDim2.new(0, 67, 0, 31);
+G2L["10"]["Name"] = [[FPSUnlocker]];
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[]];
+G2L["10"]["Position"] = UDim2.new(0.67615, 0, 0.06897, 0);
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.FPSUnlocker.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["10"]);
+G2L["11"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.FPSUnlocker.FPSUnlocker
+G2L["12"] = Instance.new("Folder", G2L["10"]);
+G2L["12"]["Name"] = [[FPSUnlocker]];
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.FPSUnlocker.FPSUnlocker.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.FPSUnlocker.FPSUnlocker.ToggleCircle
+G2L["14"] = Instance.new("Frame", G2L["12"]);
+G2L["14"]["Active"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(101, 0, 0);
+G2L["14"]["Size"] = UDim2.new(0, 27, 0, 27);
+G2L["14"]["Position"] = UDim2.new(0, 2, 0, 2);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Name"] = [[ToggleCircle]];
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.FPSUnlocker.FPSUnlocker.ToggleCircle.UICorner
+G2L["15"] = Instance.new("UICorner", G2L["14"]);
+G2L["15"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.FPSUnlocker.FPSUnlocker.TextLabel
+G2L["16"] = Instance.new("TextLabel", G2L["12"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["16"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["TextSize"] = 20;
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["Size"] = UDim2.new(0, 105, 0, 19);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[FPS Unlocker]];
+G2L["16"]["Position"] = UDim2.new(0, -293, 0, 6);
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.WalkSpeedChanger
+G2L["17"] = Instance.new("Folder", G2L["c"]);
+G2L["17"]["Name"] = [[WalkSpeedChanger]];
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.WalkSpeedChanger
+G2L["18"] = Instance.new("TextButton", G2L["c"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["Size"] = UDim2.new(0, 67, 0, 31);
+G2L["18"]["Name"] = [[WalkSpeedChanger]];
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[]];
+G2L["18"]["Position"] = UDim2.new(0.67615, 0, 0.2931, 0);
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.WalkSpeedChanger.UICorner
+G2L["19"] = Instance.new("UICorner", G2L["18"]);
+G2L["19"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.WalkSpeedChanger.FPSUnlocker
+G2L["1a"] = Instance.new("Folder", G2L["18"]);
+G2L["1a"]["Name"] = [[FPSUnlocker]];
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.WalkSpeedChanger.FPSUnlocker.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
+
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.WalkSpeedChanger.FPSUnlocker.ToggleCircle
+G2L["1c"] = Instance.new("Frame", G2L["1a"]);
+G2L["1c"]["Active"] = true;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(101, 0, 0);
+G2L["1c"]["Size"] = UDim2.new(0, 27, 0, 27);
+G2L["1c"]["Position"] = UDim2.new(0, 2, 0, 2);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Name"] = [[ToggleCircle]];
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.WalkSpeedChanger.FPSUnlocker.ToggleCircle.UICorner
+G2L["1d"] = Instance.new("UICorner", G2L["1c"]);
+G2L["1d"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.WalkSpeedChanger.FPSUnlocker.TextLabel
+G2L["1e"] = Instance.new("TextLabel", G2L["1a"]);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1e"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["TextSize"] = 20;
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["BackgroundTransparency"] = 1;
+G2L["1e"]["Size"] = UDim2.new(0, 105, 0, 19);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[Walkspeed Enabler]];
+G2L["1e"]["Position"] = UDim2.new(0, -293, 0, 6);
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.Walkspeed
+G2L["1f"] = Instance.new("TextBox", G2L["c"]);
+G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1f"]["TextWrapped"] = true;
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["Name"] = [[Walkspeed]];
+G2L["1f"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["1f"]["TextScaled"] = true;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f"]["RichText"] = true;
+G2L["1f"]["MultiLine"] = true;
+G2L["1f"]["ClearTextOnFocus"] = false;
+G2L["1f"]["PlaceholderText"] = [[Number here]];
+G2L["1f"]["Size"] = UDim2.new(0, 62, 0, 46);
+G2L["1f"]["Position"] = UDim2.new(0.84902, 0, 0.26293, 0);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[]];
+
+
+-- StarterGui.Neco-Ware.Main.SettingsTab.Walkspeed.UICorner
+G2L["20"] = Instance.new("UICorner", G2L["1f"]);
+G2L["20"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Neco-Ware.Main.Dragify
+G2L["21"] = Instance.new("LocalScript", G2L["2"]);
+G2L["21"]["Name"] = [[Dragify]];
+
+
+-- StarterGui.Neco-Ware.Main.OpenCloseScript
+G2L["22"] = Instance.new("LocalScript", G2L["2"]);
+G2L["22"]["Name"] = [[OpenCloseScript]];
+
+
+-- StarterGui.Neco-Ware.Main.OpenCloseScriptSave
+G2L["23"] = Instance.new("LocalScript", G2L["2"]);
+G2L["23"]["Enabled"] = false;
+G2L["23"]["Name"] = [[OpenCloseScriptSave]];
+G2L["23"]["Disabled"] = true;
+
+
+-- StarterGui.Neco-Ware.Main.ExecTab
+G2L["24"] = Instance.new("Frame", G2L["2"]);
+G2L["24"]["ZIndex"] = 0;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["Size"] = UDim2.new(0, 457, 0, 232);
+G2L["24"]["Position"] = UDim2.new(0, 0, 0.10769, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Name"] = [[ExecTab]];
+G2L["24"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Neco-Ware.Main.ExecTab.TextBox
+G2L["25"] = Instance.new("TextBox", G2L["24"]);
+G2L["25"]["CursorPosition"] = -1;
+G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["RichText"] = true;
+G2L["25"]["MultiLine"] = true;
+G2L["25"]["ClearTextOnFocus"] = false;
+G2L["25"]["PlaceholderText"] = [[your skibidy skript here lulz]];
+G2L["25"]["Size"] = UDim2.new(0, 444, 0, 185);
+G2L["25"]["Position"] = UDim2.new(0.01313, 0, 0.01724, 0);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[print("Hello World!")]];
+
+
+-- StarterGui.Neco-Ware.Main.ExecTab.TextBox.UICorner
+G2L["26"] = Instance.new("UICorner", G2L["25"]);
+G2L["26"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Neco-Ware.Main.ExecTab.TextBox.UIStroke
+G2L["27"] = Instance.new("UIStroke", G2L["25"]);
+G2L["27"]["Color"] = Color3.fromRGB(0, 96, 6);
+
+
+-- StarterGui.Neco-Ware.Main.ExecTab.Execution
+G2L["28"] = Instance.new("Frame", G2L["24"]);
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Size"] = UDim2.new(0, 444, 0, 35);
+G2L["28"]["Position"] = UDim2.new(0, 6, 0, 193);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Name"] = [[Execution]];
+
+
+-- StarterGui.Neco-Ware.Main.ExecTab.Execution.UICorner
+G2L["29"] = Instance.new("UICorner", G2L["28"]);
+G2L["29"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Neco-Ware.Main.ExecTab.Execution.Execute
+G2L["2a"] = Instance.new("ImageButton", G2L["28"]);
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["Image"] = [[rbxassetid://104190126655538]];
+G2L["2a"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["2a"]["BackgroundTransparency"] = 1;
+G2L["2a"]["Name"] = [[Execute]];
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Position"] = UDim2.new(0.93217, 0, 0.14286, 0);
+
+
+-- StarterGui.Neco-Ware.Main.ExecTab.Execution.Execute.LocalScript
+G2L["2b"] = Instance.new("LocalScript", G2L["2a"]);
+
+
+
+-- StarterGui.Neco-Ware.Main.ExecTab.Execution.Clear
+G2L["2c"] = Instance.new("ImageButton", G2L["28"]);
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["Image"] = [[rbxassetid://103533465170990]];
+G2L["2c"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["2c"]["BackgroundTransparency"] = 1;
+G2L["2c"]["Name"] = [[Clear]];
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Position"] = UDim2.new(0.84683, 0, 0.14286, 0);
+
+
+-- StarterGui.Neco-Ware.Main.ExecTab.Execution.Clear.LocalScript
+G2L["2d"] = Instance.new("LocalScript", G2L["2c"]);
+
+
+
+-- StarterGui.Neco-Ware.Main.ExecTab.Execution.UIStroke
+G2L["2e"] = Instance.new("UIStroke", G2L["28"]);
+G2L["2e"]["Color"] = Color3.fromRGB(0, 96, 6);
+
+
+-- StarterGui.Neco-Ware.Main.UIStroke
+G2L["2f"] = Instance.new("UIStroke", G2L["2"]);
+G2L["2f"]["Thickness"] = 2;
+G2L["2f"]["Color"] = Color3.fromRGB(0, 96, 0);
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame
+G2L["30"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["30"]["Active"] = true;
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["Size"] = UDim2.new(0, 150, 0, 232);
+G2L["30"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Position"] = UDim2.new(0, 0, 0, 27);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel
+G2L["31"] = Instance.new("Frame", G2L["30"]);
+G2L["31"]["ZIndex"] = 2147248;
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Size"] = UDim2.new(0, 45, 0, 233);
+G2L["31"]["Position"] = UDim2.new(0, -1, -1, 0);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Name"] = [[Panel]];
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.ExecutorTab
+G2L["32"] = Instance.new("ImageButton", G2L["31"]);
+G2L["32"]["BorderSizePixel"] = 0;
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["Image"] = [[rbxassetid://93861681687521]];
+G2L["32"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["32"]["BackgroundTransparency"] = 1;
+G2L["32"]["Name"] = [[ExecutorTab]];
+G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Position"] = UDim2.new(0, 7, 0, 92);
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.ExecutorTab.LocalScript
+G2L["33"] = Instance.new("LocalScript", G2L["32"]);
+
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.SettingsTab
+G2L["34"] = Instance.new("ImageButton", G2L["31"]);
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["Image"] = [[rbxassetid://72959470467034]];
+G2L["34"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["34"]["BackgroundTransparency"] = 1;
+G2L["34"]["Name"] = [[SettingsTab]];
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Position"] = UDim2.new(0, 7, 0, 122);
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.SettingsTab.LocalScript
+G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.ImageLabel
+G2L["36"] = Instance.new("ImageLabel", G2L["31"]);
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["ImageTransparency"] = 1;
+G2L["36"]["Image"] = [[rbxassetid://84668780461503]];
+G2L["36"]["Size"] = UDim2.new(0, 140, 0, 58);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["BackgroundTransparency"] = 1;
+G2L["36"]["Position"] = UDim2.new(0, 4, 0, 4);
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.ExecLabel
+G2L["37"] = Instance.new("TextLabel", G2L["31"]);
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["37"]["TextTransparency"] = 1;
+G2L["37"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["TextSize"] = 20;
+G2L["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["BackgroundTransparency"] = 1;
+G2L["37"]["Size"] = UDim2.new(0, 70, 0, 19);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Text"] = [[Executor]];
+G2L["37"]["Name"] = [[ExecLabel]];
+G2L["37"]["Position"] = UDim2.new(0, 44, 0, 97);
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.Settingslabel
+G2L["38"] = Instance.new("TextLabel", G2L["31"]);
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["38"]["TextTransparency"] = 1;
+G2L["38"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["TextSize"] = 20;
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["BackgroundTransparency"] = 1;
+G2L["38"]["Size"] = UDim2.new(0, 70, 0, 19);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Text"] = [[Settings]];
+G2L["38"]["Name"] = [[Settingslabel]];
+G2L["38"]["Position"] = UDim2.new(0, 44, 0, 127);
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.Discordlabel
+G2L["39"] = Instance.new("TextLabel", G2L["31"]);
+G2L["39"]["BorderSizePixel"] = 0;
+G2L["39"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["39"]["TextTransparency"] = 1;
+G2L["39"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["TextSize"] = 20;
+G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["BackgroundTransparency"] = 1;
+G2L["39"]["Size"] = UDim2.new(0, 126, 0, 19);
+G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"]["Text"] = [[got any problems?]];
+G2L["39"]["Name"] = [[Discordlabel]];
+G2L["39"]["Position"] = UDim2.new(0, 10, 0, 190);
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.DiscordButton
+G2L["3a"] = Instance.new("TextButton", G2L["31"]);
+G2L["3a"]["TextWrapped"] = true;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["TextTransparency"] = 1;
+G2L["3a"]["TextSize"] = 12;
+G2L["3a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3a"]["Size"] = UDim2.new(0, 146, 0, 24);
+G2L["3a"]["BackgroundTransparency"] = 1;
+G2L["3a"]["Name"] = [[DiscordButton]];
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Text"] = [[dsc.gg/neco-ware]];
+G2L["3a"]["Position"] = UDim2.new(0.00676, 0, 0.897, 0);
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.DiscordButton.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
+
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.MenuButton
+G2L["3c"] = Instance.new("ImageButton", G2L["31"]);
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3c"]["Image"] = [[rbxassetid://117393654317991]];
+G2L["3c"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["3c"]["BackgroundTransparency"] = 1;
+G2L["3c"]["Name"] = [[MenuButton]];
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Position"] = UDim2.new(0, 7, 0, 62);
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.MenuButton.LocalScript
+G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
+
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.MenuLabel
+G2L["3e"] = Instance.new("TextLabel", G2L["31"]);
+G2L["3e"]["BorderSizePixel"] = 0;
+G2L["3e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3e"]["TextTransparency"] = 1;
+G2L["3e"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["TextSize"] = 20;
+G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["BackgroundTransparency"] = 1;
+G2L["3e"]["Size"] = UDim2.new(0, 70, 0, 19);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Text"] = [[Menu Button]];
+G2L["3e"]["Name"] = [[MenuLabel]];
+G2L["3e"]["Position"] = UDim2.new(0, 44, 0, 67);
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.UIStroke
+G2L["3f"] = Instance.new("UIStroke", G2L["31"]);
+G2L["3f"]["Color"] = Color3.fromRGB(0, 96, 6);
+
+
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.UICorner
+G2L["40"] = Instance.new("UICorner", G2L["31"]);
+G2L["40"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.Neco-Ware.Main.Panel.MenuButton.LocalScript
+local function C_7()
+local script = G2L["7"];
+	local function fadeImage(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { ImageTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local function SpinObject(object, dur, goal)
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { Rotation = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+		
+		tween:Play()
+		
+	end
+	
+	local function fadeText(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { TextTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local panel = script.Parent.Parent.Parent.ScrollingFrame.Panel
+	
+	-- Reference to the TextButton
+	local button = script.Parent
+	
+	-- Toggle state variable
+	local isOn = true
+	
+	-- Function to toggle the button
+	local function toggleButton()
+		if isOn then
+			script.Parent.Parent.Parent.ScrollingFrame.Panel:TweenPosition(UDim2.new(0,-1,0,0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.1)
+		else
+			script.Parent.Parent.Parent.ScrollingFrame.Panel:TweenPosition(UDim2.new(0,-1,-1,0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+			panel:TweenSize(UDim2.new(0,45,0,233), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+			fadeText(panel.Discordlabel, 0.1, 1)
+			fadeText(panel.ExecLabel, 0.1, 1)
+			fadeText(panel.MenuLabel, 0.1, 1)
+			fadeText(panel.Settingslabel, 0.1, 1)
+			fadeText(panel.DiscordButton, 0.1 ,1)
+			fadeImage(panel.ImageLabel, 0.1, 1)
+			_G.isOn = true
+		end
+		isOn = not isOn
+	end
+	
+	-- Connect the function to the button click event
+	button.MouseButton1Click:Connect(toggleButton)
+	
+	button.MouseEnter:Connect(function()
+		button:TweenPosition(UDim2.new(0,16,0,8), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+		button:TweenSize(UDim2.new(0,38,0,38), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+	end)
+	
+	button.MouseLeave:Connect(function()
+		button:TweenPosition(UDim2.new(0,16,0,15), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+		button:TweenSize(UDim2.new(0,32,0,32), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+	end)
+	
+	
+	
+end;
+task.spawn(C_7);
+-- StarterGui.Neco-Ware.Main.Panel.MenuButton.LocalScript
+local function C_8()
+local script = G2L["8"];
+	_G.isOn = true
+end;
+task.spawn(C_8);
+-- StarterGui.Neco-Ware.Main.SettingsTab.LocalScript
+local function C_f()
+local script = G2L["f"];
+	local function fadeImage(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { ImageTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local function SpinObject(object, dur, goal)
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { Rotation = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+		
+		tween:Play()
+		
+	end
+	
+	local function fadeText(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { TextTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local panel = script.Parent.Parent.Parent.ScrollingFrame.Panel
+	
+	-- Reference to the TextButton
+	local button = script.Parent
+	
+	-- Toggle state variable
+	local isOn = true
+	
+	-- Function to toggle the button
+	local function toggleButton()
+		if isOn then
+			script.Parent.Parent.Parent.ScrollingFrame.Panel:TweenPosition(UDim2.new(0,-1,0,0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.1)
+		else
+			script.Parent.Parent.Parent.ScrollingFrame.Panel:TweenPosition(UDim2.new(0,-1,-1,0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+			panel:TweenSize(UDim2.new(0,45,0,233), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+			fadeText(panel.Discordlabel, 0.1, 1)
+			fadeText(panel.ExecLabel, 0.1, 1)
+			fadeText(panel.Scriptlabel, 0.1, 1)
+			fadeText(panel.Settingslabel, 0.1, 1)
+			fadeText(panel.DiscordButton, 0.1 ,1)
+			fadeImage(panel.ImageLabel, 0.1, 1)
+			_G.isOn = true
+		end
+		isOn = not isOn
+	end
+	
+	-- Connect the function to the button click event
+	button.MouseButton1Click:Connect(toggleButton)
+	
+	button.MouseEnter:Connect(function()
+		SpinObject(button, 0.5, 180)
+	end)
+	
+	button.MouseLeave:Connect(function()
+		SpinObject(button, 0.5, 0)
+	end)
+	
+	
+	
+end;
+task.spawn(C_f);
+-- StarterGui.Neco-Ware.Main.SettingsTab.FPSUnlocker.FPSUnlocker.LocalScript
+local function C_13()
+local script = G2L["13"];
+	local function fadeImage(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { ImageTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local function TweenColor(object, dur, goal)
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { BackgroundColor3 = goal})
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		tween:Play()
+	
+	end
+	
+	local function fadeText(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { TextTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	-- Reference to the TextButton
+	local button = script.Parent.Parent
+	
+	-- Toggle state variable
+	local isOn = true
+	
+	-- Function to toggle the button
+	local function toggleButton()
+		if isOn then
+			script.Parent.Parent.FPSUnlocker.ToggleCircle:TweenPosition(UDim2.new(0,38,0,2), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3)
+			TweenColor(script.Parent.ToggleCircle, 0.3, Color3.fromRGB(0, 100, 0))
+			setfflag("TaskSchedulerTargetFps", script.Parent.Parent.Parent.FPS.Text)
+		else
+			script.Parent.Parent.FPSUnlocker.ToggleCircle:TweenPosition(UDim2.new(0,2,0,2), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3)
+			TweenColor(script.Parent.ToggleCircle, 0.3, Color3.fromRGB(100, 0, 0))
+			setfflag("TaskSchedulerTargetFps", "120")
+		end
+		isOn = not isOn
+	end
+	
+	-- Connect the function to the button click event
+	button.MouseButton1Click:Connect(toggleButton)
+	
+	button.MouseEnter:Connect(function()
+		
+	end)
+	
+	button.MouseLeave:Connect(function()
+		
+	end)
+	
+	
+	
+	
+end;
+task.spawn(C_13);
+-- StarterGui.Neco-Ware.Main.SettingsTab.WalkSpeedChanger.FPSUnlocker.LocalScript
+local function C_1b()
+local script = G2L["1b"];
+	local function TweenColor(object, dur, goal)
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { BackgroundColor3 = goal})
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		tween:Play()
+	
+	end
+	
+	
+	
+	-- Reference to the TextButton
+	local button = script.Parent.Parent
+	
+	-- Toggle state variable
+	local isOn = true
+	
+	-- Function to toggle the button
+	local function toggleButton()
+		if isOn then
+			script.Parent.Parent.FPSUnlocker.ToggleCircle:TweenPosition(UDim2.new(0,38,0,2), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3)
+			TweenColor(script.Parent.ToggleCircle, 0.3, Color3.fromRGB(0, 100, 0))
+			game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = script.Parent.Parent.Parent.Walkspeed.Text
+		else
+			script.Parent.Parent.FPSUnlocker.ToggleCircle:TweenPosition(UDim2.new(0,2,0,2), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3)
+			TweenColor(script.Parent.ToggleCircle, 0.3, Color3.fromRGB(100, 0, 0))
+			game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 16
+		end
+		isOn = not isOn
+	end
+	
+	-- Connect the function to the button click event
+	button.MouseButton1Click:Connect(toggleButton)
+	
+	button.MouseEnter:Connect(function()
+		
+	end)
+	
+	button.MouseLeave:Connect(function()
+		
+	end)
+	
+	
+	
+	
+end;
+task.spawn(C_1b);
+-- StarterGui.Neco-Ware.Main.Dragify
+local function C_21()
+local script = G2L["21"];
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end;
+task.spawn(C_21);
+-- StarterGui.Neco-Ware.Main.OpenCloseScript
+local function C_22()
+local script = G2L["22"];
+	local UserInputService = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	local frame = script.Parent
+	
+	local TextBox = frame:WaitForChild("ExecTab"):WaitForChild("TextBox")
+	
+	local Execution = frame.ExecTab:WaitForChild("Execution")
+	local Clear = Execution:WaitForChild("Clear")
+	local Execute = Execution:WaitForChild("Execute")
+	local Menu = frame.ScrollingFrame:WaitForChild("Panel")
+	
+	local Panel = frame:WaitForChild("Panel")
+	
+	local function fadeObject(object, dur, goal) --callback
+		
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { BackgroundTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+		
+	end
+	
+	local function fadeImage(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { ImageTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local function fadeText(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { TextTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	UserInputService.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.Insert then
+			if frame.Visible then
+				frame.Visible = false
+			elseif not frame.Visible then
+				frame.Visible = true
+				
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_22);
+-- StarterGui.Neco-Ware.Main.ExecTab.Execution.Execute.LocalScript
+local function C_2b()
+local script = G2L["2b"];
+	local textbox = script.Parent.Parent.Parent.TextBox
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(textbox.Text)()
+	end)
+end;
+task.spawn(C_2b);
+-- StarterGui.Neco-Ware.Main.ExecTab.Execution.Clear.LocalScript
+local function C_2d()
+local script = G2L["2d"];
+	local function changetext(textbox, text)
+		textbox.Text = ""
+	end
+	local text = script.Parent.Parent.Parent.TextBox
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		changetext(text, "")
+	end)
+end;
+task.spawn(C_2d);
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.ExecutorTab.LocalScript
+local function C_33()
+local script = G2L["33"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.ExecTab.Visible = true
+		script.Parent.Parent.Parent.Parent.SettingsTab.Visible = false
+	end)
+end;
+task.spawn(C_33);
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.SettingsTab.LocalScript
+local function C_35()
+local script = G2L["35"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.ExecTab.Visible = false
+		script.Parent.Parent.Parent.Parent.SettingsTab.Visible = true
+	end)
+end;
+task.spawn(C_35);
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.DiscordButton.LocalScript
+local function C_3b()
+local script = G2L["3b"];
+	local function copydiscord()
+		setclipboard(script.Parent.Text)
+	end
+	
+	script.Parent.MouseButton1Click:Connect(copydiscord)
+end;
+task.spawn(C_3b);
+-- StarterGui.Neco-Ware.Main.ScrollingFrame.Panel.MenuButton.LocalScript
+local function C_3d()
+local script = G2L["3d"];
+	--big size: {0, 148},{0, 233}
+	--small size: {0, 45},{0, 233}
+	--first pos: {0, -1},{-1, 0}
+	--second pos: {0, -1},{0, 0}
+	
+	_G.isOn = true
+	
+	local panel = script.Parent.Parent
+	
+	local function fadeImage(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { ImageTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local function fadeText(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { TextTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	-- Reference to the TextButton
+	local button = script.Parent
+	
+	-- Toggle state variable
+	
+	
+	-- Function to toggle the button
+	local function toggleButton()
+		if _G.isOn then
+			script.Parent.Parent:TweenSize(UDim2.new(0,148,0,233), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.1)
+			fadeText(panel.Discordlabel, 0.1, 0)
+			fadeText(panel.ExecLabel, 0.1, 0)
+			fadeText(panel.MenuLabel, 0.1, 0)
+			fadeText(panel.Settingslabel, 0.1, 0)
+			fadeText(panel.DiscordButton, 0.1, 0)
+			fadeImage(panel.ImageLabel, 0.1, 0)
+		else
+			script.Parent.Parent:TweenSize(UDim2.new(0,45,0,233), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+			fadeText(panel.Discordlabel, 0.1, 1)
+			fadeText(panel.ExecLabel, 0.1, 1)
+			fadeText(panel.MenuLabel, 0.1, 1)
+			fadeText(panel.Settingslabel, 0.1, 1)
+			fadeText(panel.DiscordButton, 0.1 ,1)
+			fadeImage(panel.ImageLabel, 0.1, 1)
+		end
+		_G.isOn = not _G.isOn
+	end
+	
+	-- Connect the function to the button click event
+	button.MouseButton1Click:Connect(toggleButton)
+end;
+task.spawn(C_3d);
+
+return G2L["1"], require;

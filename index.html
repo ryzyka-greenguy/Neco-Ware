@@ -1,30 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neco-Ware</title>
+    <title>skibidi executor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="NecoWareLogo.png">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            width: 100%;
+            overflow-x: hidden;
+            background-color: #000000;
+            color: #b3b3b3;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            animation: moveStars 50s linear infinite;
+        }
+
+        .star::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            filter: blur(2px);
+        }
+
+        @keyframes moveStars {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(1000px);
+            }
+        }
+
+        @keyframes spinAndTilt {
+            0% {
+                transform: perspective(500px) rotateY(0deg) rotateX(0deg);
+            }
+            50% {
+                transform: perspective(500px) rotateY(10deg) rotateX(5deg);
+            }
+            100% {
+                transform: perspective(500px) rotateY(0deg) rotateX(0deg);
+            }
+        }
+
+        .spacing {
+            --nav-main-spacing: -3rem;
+            --main-faq-spacing: 3rem;
+            --faq-features-spacing: 3rem;
+        }
+
+        .main-content {
+            margin-top: var(--nav-main-spacing);
+            animation: fadeIn 1s ease-out;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 80vh;
+            gap: 2rem;
+        }
+
+        .faq-section {
+            margin-top: var(--main-faq-spacing);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .features-section {
+            margin-top: var(--faq-features-spacing);
+            animation: fadeIn 2s ease-out;
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+            color: #b3b3b3;
+        }
+
+        .faq-content.open {
+            max-height: 500px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #2d2d2d;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1f9a18;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #33bf2c;
+        }
+
+        .card {
+            background-color: #032900;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background-color: #053300;
+        }
+
+        .faq-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-button .emoji {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-button .emoji.open {
+            transform: rotate(180deg);
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            transition: transform 0.5s ease;
+            transform-style: preserve-3d;
+            perspective: 500px;
+        }
+
+        .image-container img:hover {
+            animation: spinAndTilt 2s ease-in-out forwards;
+        }
+    </style>
 </head>
-<body>
-    <!-- Left and Right Images -->
-    <img src="">
-    <img src="">
 
-    <!-- Background Music -->
-    <audio autoplay loop>
-        <source src="https://cdn.discordapp.com/attachments/1269673763566518382/1271694344973451264/y2mate.com_-_Opera_GX_background_music_Evolve.mp3?ex=66b84526&is=66b6f3a6&hm=72461f85a7c01f3fda138beee68cfdbecd9aaddfffbc0c3c41f21aded7999c76&" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
+<body class="spacing">
+    <div class="container mx-auto p-4">
+        <nav class="flex justify-between items-center py-4">
+            <div class="text-2xl font-bold bg-gradient-to-r from-green-700 to-green-900 text-transparent bg-clip-text">Neco-Ware</div>
+            <div class="space-x-4 text-lg">
+                <a href="https://discord.gg/jHMhSpdcxm" class="hover:text-gray-400"><i class="fab fa-discord"></i></a>
+            </div>
+        </nav>
 
-    <div class="container">
-        <div class="introducing">Introducing</div>
-        <h1>Neco-Ware<span class="version"> V2</span></h1>
-        <p>Number 1 New and Upcoming Scripting Utility For Roblox</p>
-        <button class="button" onclick="openWebsite()">Download Purplistt (No Neco-Ware 😔)</button>
+        <div class="main-content">
+            <div class="text-content w-full lg:w-1/2">
+                <h1 class="text-4xl font-bold mb-4 text-green-700">Neco-Ware for <span class="text-green-900">Roblox</span></h1>
+                <h2 class="text-3xl mb-4">Bypass with <span class="text-green-900">power</span>. Inject with <span class="text-green-900">ease</span>.</h2>
+                <p class="text-lg mb-6">Experience the ultimate cheating tool for Roblox. Our dedicated developers ensure constant updates and superior performance.</p>
+                <div class="flex space-x-4">
+                    <a href="https://discord.gg/jHMhSpdcxm" class="bg-green-800 text-white py-2 px-4 rounded-full text-lg">Get Neco-Ware Now!</a>
+                    <button onclick="scrollToSection('faq')" class="bg-gray-800 text-white py-2 px-4 rounded-full text-lg">FAQ</button>
+                    <button onclick="scrollToSection('features')" class="bg-gray-800 text-white py-2 px-4 rounded-full text-lg">Features</button>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1303413412797349888/1306711315556864122/image.png?ex=674ac6ff&is=6749757f&hm=ffbdb4446915daf14a9ff5efb6fa55a1cd2afa6da832257c3afb01b5189e70ae&" alt="skibidi toilet neco-ware haha" 
+                    class="rounded-lg shadow-2xl">
+            </div>
+        </div>
+
+        <section id="faq" class="faq-section py-16">
+            <h2 class="text-3xl font-bold mb-8 text-center text-green-700">Frequently Asked Questions</h2>
+            <div class="space-y-8">
+                <div class="card p-6 rounded-lg">
+                    <button class="faq-button text-2xl font-semibold mb-4 w-full text-left focus:outline-none" onclick="toggleFaq(this)">
+            What is Neco-Ware?
+            <span class="emoji">⌄</span>
+          </button>
+                    <div class="faq-content">
+                        <p>Neco-Ware is a powerful Roblox executor that allows you to inject scripts and bypass restrictions effortlessly.</p>
+                    </div>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <button class="faq-button text-2xl font-semibold mb-4 w-full text-left focus:outline-none" onclick="toggleFaq(this)">
+            Is Neco-Ware safe to use?
+            <span class="emoji">⌄</span>
+          </button>
+                    <div class="faq-content">
+                        <p>Yes, our team of dedicated developers constantly updates Nebula to ensure its safety and reliability.</p>
+                    </div>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <button class="faq-button text-2xl font-semibold mb-4 w-full text-left focus:outline-none" onclick="toggleFaq(this)">
+            How can I get Neco-Ware?
+            <span class="emoji">⌄</span>
+          </button>
+                    <div class="faq-content">
+                        <p>You can download Neco-Ware by clicking on the "Get Neco-Ware Now!" button above.</p>
+                    </div>
+                </div>
+				<div class="card p-6 rounded-lg">
+                    <button class="faq-button text-2xl font-semibold mb-4 w-full text-left focus:outline-none" onclick="toggleFaq(this)">
+            YOU NIGA SKIDDED THIS!! 😡😡
+            <span class="emoji">⌄</span>
+          </button>
+                    <div class="faq-content">
+                        <p>its not our problem if our devs are skids, gg out!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section py-16">
+            <h2 class="text-3xl font-bold mb-8 text-center text-green-700">Features</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Advanced Scripting</h3>
+                    <p>Inject and execute scripts with unparalleled ease and precision.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Regular Updates</h3>
+                    <p>Our team ensures that Neco-Ware is always up-to-date with the latest Roblox patches.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">User-Friendly Interface</h3>
+                    <p>Navigating through Neco-Ware's features is simple and intuitive.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">High Performance</h3>
+                    <p>Experience lightning-fast script execution and bypassing.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Customizable Settings</h3>
+                    <p>Tailor Nebula to fit your specific needs and preferences.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Dedicated Support</h3>
+                    <p>Our support team is always ready to assist you with any issues.</p>
+                </div>
+				
+            </div>
+        </section>
     </div>
 
-    <script src="script.js"></script>
+    <div id="stars-container" class="absolute inset-0 -z-10"></div>
+
+    <script>
+        function createStars() {
+            const starsContainer = document.getElementById('stars-container');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.animationDelay = `${Math.random() * 50}s`;
+                starsContainer.appendChild(star);
+            }
+        }
+
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const emoji = button.querySelector('.emoji');
+            content.classList.toggle('open');
+            emoji.classList.toggle('open');
+            if (content.classList.contains('open')) {
+                emoji.textContent = '⌃';
+            } else {
+                emoji.textContent = '⌄';
+            }
+        }
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function redirectToGitHub() {
+            window.location.href = 'https://github.com/YOUR_GITHUB_LINK_HERE';
+        }
+
+        createStars();
+    </script>
 </body>
+
 </html>

@@ -29,6 +29,18 @@
             animation: moveStars 50s linear infinite;
         }
 
+        #stars-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+
         .star::before {
             content: '';
             position: absolute;
@@ -111,18 +123,20 @@
 
         ::-webkit-scrollbar {
             width: 10px;
+            
         }
 
         ::-webkit-scrollbar-track {
-            background: #2d2d2d;
+            background: #000000;
         }
 
         ::-webkit-scrollbar-thumb {
-            background: #1f9a18;
+            background: #067c00;
+            border-radius: 10px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: #33bf2c;
+            background: #055c00;
         }
 
         .card {
@@ -149,6 +163,7 @@
             transform: rotate(180deg);
         }
 
+
         .image-container {
             display: flex;
             justify-content: center;
@@ -168,6 +183,7 @@
         .image-container img:hover {
             animation: spinAndTilt 2s ease-in-out forwards;
         }
+
     </style>
 </head>
 
@@ -177,18 +193,24 @@
             <div class="text-2xl font-bold bg-gradient-to-r from-green-700 to-green-900 text-transparent bg-clip-text">Neco-Ware</div>
             <div class="space-x-4 text-lg">
                 <a href="https://discord.gg/jHMhSpdcxm" class="hover:text-gray-400"><i class="fab fa-discord"></i></a>
+                <a href="https://www.tiktok.com/@necoware.team?_t=8roknyUs1bU&_r=1" class="hover:text-gray-400"><i class="fab fa-tiktok"></i></a>
+                <a href="https://x.com/necowareteam" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+            
             </div>
         </nav>
 
         <div class="main-content">
             <div class="text-content w-full lg:w-1/2">
-                <h1 class="text-4xl font-bold mb-4 text-green-700">Neco-Ware for <span class="text-green-900">Roblox</span></h1>
-                <h2 class="text-3xl mb-4">Bypass with <span class="text-green-900">power</span>. Inject with <span class="text-green-900">ease</span>.</h2>
+                <h1 class="text-4xl font-bold mb-4 text-green-700">Neco-Ware <span class="text-green-900">Executor</span></h1>
+                <h2 class="text-3xl mb-4">Execute with <span class="text-green-900">power</span>. Inject with <span class="text-green-900">ease</span>.</h2>
                 <p class="text-lg mb-6">Experience the ultimate cheating tool for Roblox. Our dedicated developers ensure constant updates and superior performance.</p>
-                <div class="flex space-x-4">
+                <div class="flex space-x-4 mb-4">
                     <a href="https://discord.gg/jHMhSpdcxm" class="bg-green-800 text-white py-2 px-4 rounded-full text-lg">Get Neco-Ware Now!</a>
                     <button onclick="scrollToSection('faq')" class="bg-gray-800 text-white py-2 px-4 rounded-full text-lg">FAQ</button>
                     <button onclick="scrollToSection('features')" class="bg-gray-800 text-white py-2 px-4 rounded-full text-lg">Features</button>
+                </div>
+                <div class="flex space-x-4 mt-4">
+                    <a href="https://gofile.io/d/20E0rm" class="bg-purple-800 text-white py-2 px-4 rounded-full text-lg">Get Purplistt Here!</a>
                 </div>
             </div>
             <div class="image-container">
@@ -270,6 +292,28 @@
             </div>
         </section>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr style="border: 1.5px solid #1f9a18; margin: 2rem auto; opacity: 0.8;">
+<br>
+<br>
+<section style="display: flex; justify-content: flex-start; gap: 4rem; align-items: center;">
+    <h2 class="text-4xl font-bold bg-gradient-to-r from-green-700 to-green-900 text-transparent bg-clip-text ml-24" style="padding-bottom: 9%;">Neco-Ware V2</h2>
+    <div style="padding-left: 14%; padding-bottom: 2%;">
+        <h4 class="text-2xl font-bold bg-gradient-to-r from-green-700 to-green-900 text-transparent bg-clip-text" style="margin: 0; padding-bottom: 5%;">We Exist</h4>
+        <h4 class="text-1xl font-bold bg-gradient-to-r from-purple-700 to-purple-900 text-transparent bg-clip-text" style="margin: 0;">Purplistt ONLINE</h4>
+        <h4 class="text-1xl font-bold bg-gradient-to-r from-green-700 to-green-900 text-transparent bg-clip-text" style="margin: 0;">Neco-Ware W.I.P</h4>
+    </div>
+    <div style="padding-left: 19%; padding-bottom: 5%;">
+        <h4 class="text-2xl font-bold bg-gradient-to-r from-green-700 to-green-900 text-transparent bg-clip-text" style="margin: 0; padding-bottom: 8%;">Follow us</h4>
+        <a href="https://discord.gg/jHMhSpdcxm" class="hover:text-gray-400"><i class="fab fa-discord"></i></a>
+        <a href="https://www.tiktok.com/@necoware.team?_t=8roknyUs1bU&_r=1" class="hover:text-gray-400"><i class="fab fa-tiktok"></i></a>
+        <a href="https://x.com/necowareteam" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>   
+    </div>
+</section>
+
 
     <div id="stars-container" class="absolute inset-0 -z-10"></div>
 
